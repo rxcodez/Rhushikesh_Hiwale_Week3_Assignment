@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.header-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+header{
+    margin-top: 4rem;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: -30px;
+    height: 1.5px;
+    background-color: rgb(165, 165, 165);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 0 2rem;
+}
+
+nav i{
+    position: relative;
+    font-size: 25px;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav i:hover{
+    color: orange;
+}
+
+.quantity-label{
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    background-color: orange;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: none;
+}
+
+.cart-box{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    width: 380px;
+    padding: 10px;
+    box-shadow: 0   5px 10px black;
+    border-radius: 5px;
+    display: none;
+}
+
+.cart-box.display{
+    display: block;
+}
+
+.product-content{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.product-content img{
+    height: 100px;
+}
+
+.cart-is-empty{
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+}
+
+.wrapper{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.all-images{
+    display: flex;
+}
+
+.small-images{
+    display: flex;
+    flex-direction: column;
+}
+.small-images img{
+    height: 120px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.small-images img:hover{
+    opacity: 1;
+}   
+
+.main-image img{
+    height: 500px;
+    transition: 0.2s;
+}   
+
+h2{
+    font-size: 35px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.review{
+    background-color: #008000;
+    display: inline-block;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.price{
+    color: rgb(29, 28, 28);
+    font-size: 26px;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.price-box{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+p{
+    padding: 10px;
+}
+input{
+    width: 30px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+button{
+    width: 130px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 2px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: orange;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: green;
+}
+
+button .fa{
+    margin-right: 10px;
+}
